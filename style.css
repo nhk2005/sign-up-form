@@ -1,0 +1,48 @@
+:root {
+  --banner-color: rgba(23, 31, 44, 0.75);
+  --banner-text-color: white;
+  --theme-color: rgba(249, 250, 252, 255);
+  --form-color: white;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.bg-img {
+  flex: 1;
+  background-image: url(img/shadow.jpeg);
+  background-size: cover;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  color: var(--banner-text-color);
+  font-size: 4rem;
+  padding: 8px;
+  margin-top: 25%;
+  background-color: var(--banner-color);
+}
+
+.banner > div {
+  opacity: 1;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  background-image: url(img/crowbar-logo.png);
+  background-size: 100% 100%;
+  opacity: 1;
+}
+
+.form-container {
+  flex: 2;
+}
