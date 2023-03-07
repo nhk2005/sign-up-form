@@ -3,6 +3,9 @@
   --banner-text-color: white;
   --theme-color: rgba(249, 250, 252, 255);
   --form-color: white;
+  --gray-border: #E5E7EB;
+  --button-color: #fbf8e9;
+  --sexy-black: rgb(0, 0, 0, 0.6);
 }
 
 body {
@@ -47,6 +50,11 @@ body {
   flex: 2;
   display: flex;
   flex-direction: column;
+  background-color: var(--theme-color);
+}
+
+.form-container > * {
+  padding: 2%;
 }
 
 .form-container p {
@@ -57,16 +65,49 @@ body {
   flex: 1;
 }
 
-.form-container > form {
+.form-container > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.create-account-form {
   flex: 1;
   display: flex;
   flex-direction: column;
+  background-color: var(--form-color);
+  box-shadow: 5px 5px 30px 0px gray;
 }
 
 .input-row {
   display: flex;
+  gap: 4%;
+  padding: 8px 12px;
 }
 
 .input-row label {
   display: block;
+  font-size: 1.25em;
+}
+
+.input-row input {
+  height: 1.5rem;
+  width: 20vw;
+  border: 2px solid var(--gray-border);
+  border-radius: 7.5px;
+}
+
+.create-account-button {
+  font-size: 1.25rem;
+  padding: 2% 3%;
+  color: white;
+  background-color: var(--sexy-black);
+  border: 2px solid var(--gray-border);
+  border-radius: 15px;
+}
+
+.form-container a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--sexy-black);
 }
