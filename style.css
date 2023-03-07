@@ -45,4 +45,10 @@ body {
 
 .form-container {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  font-size: 1.75rem;
 }
